@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="100% Canadian since 1819">
+  <defs>
+    <!-- Text arcs sit inside the white ring, radius ~74 -->
+    <path id="topArc" d="M 32,100 A 68,68 0 0 1 168,100" fill="none" />
+    <path id="botArc" d="M 32,104 A 68,68 0 0 0 168,104" fill="none" />
+  </defs>
+
+  <!-- Outer red ring -->
+  <circle cx="100" cy="100" r="94" fill="#b93030" />
+  <!-- White text ring -->
+  <circle cx="100" cy="100" r="82" fill="#fff" />
+  <!-- Inner red disc -->
+  <circle cx="100" cy="100" r="68" fill="#b93030" />
+
+  <!-- Curved text on white ring -->
+  <text font-family="Playfair Display, Georgia, serif" font-weight="700" fill="#b93030" font-size="13" letter-spacing="2.5">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">100% CANADIAN</textPath>
+  </text>
+  <text font-family="Playfair Display, Georgia, serif" font-weight="700" fill="#b93030" font-size="9.5" letter-spacing="3">
+    <textPath href="#botArc" startOffset="50%" text-anchor="middle">SINCE 1819</textPath>
+  </text>
+
+  <!-- Canadian flag maple leaf (11-point, correct silhouette)
+       Original path from Wikimedia public-domain Canadian flag SVG,
+       scaled and centered on 100,100. Original viewBox is 0 0 100 100
+       with the leaf spanning ~x[19..81], y[26..79]. We translate the
+       centroid to (100,100) and scale by 1.2. -->
+  <g transform="translate(100 100) scale(1.2) translate(-50 -50)" fill="#fff">
+    <path d="M 50,26
+             L 45,36
+             L 43,34
+             L 40,42
+             L 34,40
+             L 36,49
+             L 25,44
+             L 27,52
+             L 20,52
+             L 30,60
+             L 27,63
+             L 41,68
+             L 39,73
+             L 47,72
+             L 47,79
+             L 50,74
+             L 53,79
+             L 53,72
+             L 61,73
+             L 59,68
+             L 73,63
+             L 70,60
+             L 80,52
+             L 73,52
+             L 75,44
+             L 64,49
+             L 66,40
+             L 60,42
+             L 57,34
+             L 55,36
+             Z" />
+  </g>
+</svg>
