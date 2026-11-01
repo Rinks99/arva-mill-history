@@ -172,10 +172,54 @@
 }
 .hero-lede {
   max-width: 62ch;
-  margin: 0 auto 3rem;
+  margin: 0 auto 1.5rem;
   font-size: var(--text-lg);
   line-height: 1.6;
   color: var(--arva-charcoal);
+}
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 0 auto 2.75rem;
+}
+.btn {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 0.8125rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.8rem 1.35rem;
+  border-radius: var(--radius);
+  border: 2px solid var(--arva-red);
+  line-height: 1.2;
+}
+.btn-primary {
+  background: var(--arva-red);
+  color: #fff;
+}
+.btn-primary:hover,
+.btn-primary:focus-visible {
+  background: var(--arva-red-deep);
+  border-color: var(--arva-red-deep);
+  color: #fff;
+}
+.btn-secondary {
+  background: transparent;
+  color: var(--arva-red-deep);
+}
+.btn-secondary:hover,
+.btn-secondary:focus-visible {
+  background: var(--arva-red);
+  border-color: var(--arva-red);
+  color: #fff;
+}
+.btn:focus-visible {
+  outline: 2px solid var(--arva-ink);
+  outline-offset: 3px;
 }
 .kpi-grid {
   display: grid;
@@ -771,6 +815,17 @@
   font-size: var(--text-sm);
   color: var(--arva-gold);
   letter-spacing: 0.05em;
+}
+p.electric-note {
+  font-family: var(--font-sans);
+  font-style: normal;
+  font-size: var(--text-sm);
+  line-height: 1.5;
+  margin: 0.85rem 0 0;
+  color: var(--arva-charcoal);
+}
+.tariff-quote p.electric-note {
+  color: #fff;
 }
 
 /* ============ FARMERS ============ */
